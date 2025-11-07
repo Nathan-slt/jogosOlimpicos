@@ -1,3 +1,108 @@
-.logo_olimpiadas{
-    height: ;
+/* Asterisco: muda todos os elementos */
+* {
+    font-family: "Stack Sans Headline", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo_olimpiadas{
+    height: 50px;
+    width: auto;
+}
+
+.cabecalho {
+    background-color: #F3F5F4;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    display: flex; /* define o contêiner como flexível */
+    gap: 30px; /* define o espaço entre os links */
+    align-items: center; /* centraliza verticalmente os itens */
+}
+
+.cabecalho a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cabecalho a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;    
+    margin: 20px 0;
+    font-size: 50px;
+}
+
+h2 {
+    margin: 20px 0;  
+    text-align: center;
+}
+
+#as-olimpiadas {
+    position: sticky; 
+    
+    /* Centralização Perfeita (a melhor técnica) */
+    top: 50%; /* Move 50% para baixo */
+    left: 50%; /* Move 50% para a direita */
+
+    color: white;           
+    font-size: 20px;         
+    text-align: center;
+}
+
+.imagem-olimpiadas {
+    position: relative;
+    display: inline-block;
+}
+
+.imagem-olimpiadas img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: black; 
+    color: white; 
+    padding: 20px 0; 
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.redes-sociais img {
+    height: 40px;
+    width: auto;
+}
+
+.olimpiadas_rodape {
+    display: block;
+    margin: 0 auto 20px auto;  /* centraliza e dá margem inferior */
+    height: 100px;
+    width: auto;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 15px;
+}
+
