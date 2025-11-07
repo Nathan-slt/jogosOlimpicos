@@ -4,9 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
     scroll-behavior: smooth;
 }
 
@@ -23,6 +20,8 @@ html {
     display: flex; /* define o contêiner como flexível */
     gap: 30px; /* define o espaço entre os links */
     align-items: center; /* centraliza verticalmente os itens */
+    z-index: 1;
+    box-sizing: border-box;
 }
 
 .cabecalho a {
@@ -36,38 +35,160 @@ html {
 }
 
 h1 {
-    text-align: center;    
+    text-align: center;   
     margin: 20px 0;
-    font-size: 50px;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    font-size: 80px;
+    color: white;
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.3), /* Sombra principal preta e visível */
+    0 0 10px rgba(0, 0, 0, 0.3); /* Sombra mais suave para um efeito de brilho/profundidade */
 }
 
 h2 {
-    margin: 20px 0;  
+    margin-top: 30px;
+    margin-bottom: 20px;
     text-align: center;
-}
-
-#as-olimpiadas {
-    position: sticky; 
-    
-    /* Centralização Perfeita (a melhor técnica) */
-    top: 50%; /* Move 50% para baixo */
-    left: 50%; /* Move 50% para a direita */
-
-    color: white;           
-    font-size: 20px;         
-    text-align: center;
+    font-size: 40px
 }
 
 .imagem-olimpiadas {
-    position: relative;
-    display: inline-block;
+    background-image: url('images/as-olimpiadas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza o texto verticalmente */
+    justify-content: center; /* centraliza o texto horizontalmente */
 }
 
-.imagem-olimpiadas img {
-    display: block;
-    width: 100%;
-    height: auto;
+.imagem-olimpiadas aside {
+    padding: 30px;
+    margin: 0 15%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
+    border-radius: 50px;
 }
+
+/*CARD JOGOS*/
+
+.secao-cards {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.secao-cards img {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+/*Próximos Jogos*/
+
+.card_jogos {
+    text-align: center;
+    color: white;
+    height: auto;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.3),
+    0px 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+ /*Cores dos cards*/
+.card1 {
+    background-color: #FFA500;
+}
+
+.card2 {
+    background-color: #00a84e;
+}
+
+.card3 {
+    background-color: #a80000;
+}
+
+.card4 {
+    background-color: #003ea8;
+}
+
+/* Efeito de aumento quando o mouse passa sobre o card */
+.card_jogos:hover {
+    transform: scale(110%); /* Aumenta o card para 110% do tamanho original */
+}
+
+.card_jogos strong {
+    font-size: 20px;
+}
+
+/* Seção medalhistas */
+
+.cards_medalhistas {
+    text-align: left;
+    background-color: #F3F5F0;
+    height: 150px;
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: rgb(155, 155, 155) solid 1px;
+    display: flex;
+    gap: 10px;
+}
+
+.secao-medalhistas {
+    align-items: center;
+    display: flex;
+    margin-left: 8px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.medalha {
+    border-radius: 50%; /* 50% é o padrão mais seguro para círculos, 100px funciona se for maior que a metade da dimensão */
+    height: 30px;
+    width: 30px;
+    /* MELHORIA: Usa Flexbox para centralizar o número perfeitamente */
+    display: flex;
+    align-items: center;    /* Centraliza Verticalmente */
+    justify-content: center; /* Centraliza Horizontalmente */
+
+    font-weight: bold;
+    font-size: 0.8em;
+    color: black; /* Garante que o número seja preto */
+    
+    margin-left: 8px; /* Espaçamento entre as bolinhas (mantido) */
+}
+
+/* Ouro */
+.m1 {
+    background-color: #ffc658;
+
+}
+
+/* Prata */
+.m2 {
+    background-color: #E5E5E5;
+}
+
+/* Bronze */
+.m3 {
+    background-color: #D3AE87;
+}
+
+/*-----------RODAPÉ------------*/
 
 footer {
     background-color: black; 
@@ -86,18 +207,21 @@ footer a {
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
 .redes-sociais img {
-    height: 40px;
+    height: 35px;
     width: auto;
 }
 
 .olimpiadas_rodape {
     display: block;
-    margin: 0 auto 20px auto;  /* centraliza e dá margem inferior */
-    height: 100px;
+    margin-top: 0;  
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
     width: auto;
 }
 
