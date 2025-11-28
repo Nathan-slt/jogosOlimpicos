@@ -1,0 +1,143 @@
+* {
+    font-family: "Stack Sans Headline", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.logo_olimpiadas{
+    height: 50px;
+    width: auto;
+}
+
+.cabecalho {
+    background-color: #F3F5F4;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    display: flex; /* define o contêiner como flexível */
+    gap: 30px; /* define o espaço entre os links */
+    align-items: center; /* centraliza verticalmente os itens */
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.cabecalho a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cabecalho a:hover {
+    text-decoration: underline;
+}
+
+        h1 {
+            color: #000000;
+            text-align: center;
+            padding-top: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            color:gray;
+            font-size: 1.2em;
+        }
+        img {
+            height: auto;
+            width: 100px;
+        }
+        .country {
+            text-align: left;
+            font-size: 1.2em;
+        }
+        .total {
+            font-size: 1.2em;
+        }
+        /* Cores das medalhas */
+        .gold {
+            background-color: #ffc658;
+            color: #000000; 
+            font-size: 1.2em;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            }
+        .silver {
+            background-color: #E5E5E5;
+            color: #000000; 
+            font-size: 1.2em;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            }
+        .bronze {
+            background-color: #D3AE87;
+            color: #000000;
+            font-size: 1.2em;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+        }
+
+        /*-----------RODAPÉ------------*/
+
+footer {
+    background-color: black; 
+    color: white; 
+    padding: 20px 0; 
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px;
+}
+
+.redes-sociais img {
+    height: 35px;
+    width: auto;
+}
+
+.olimpiadas_rodape {
+    display: block;
+    margin-top: 0;  
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    width: auto;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 15px;
+}
